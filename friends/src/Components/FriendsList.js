@@ -40,15 +40,15 @@ class FriendsList extends React.Component {
   render() {
     return (
       <>
-        <Grid container>
+        <Grid container spacing={4}>
           {this.state.friends.map((friend, i) => {
             return (
               <Grid item key={i}>
                 <Typography textAlign="left" variant="h4">
                   {friend.name}
                 </Typography>
-                <Typography variant="h4">{friend.age}</Typography>
-                <Typography variant="h4">{friend.email}</Typography>
+                <Typography variant="h5">{friend.age}</Typography>
+                <Typography variant="h5">{friend.email}</Typography>
               </Grid>
             );
           })}
